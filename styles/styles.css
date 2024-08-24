@@ -20,3 +20,20 @@ body, html{
     height: 100%; 
     scroll-behavior: smooth; 
 }
+/* Declaracion de colores  y Font*/
+:root {
+    /*-- Font --*/
+    --f_fontSize: 16px;
+    --f_fontWeight: 400;
+    --f_fontFamily: "Raleway", sans-serif;
+    --f_fontFamily--Secundary: "Roboto", sans-serif;
+    --f_lineHeight: 1.5;
+    /*-- Colour --*/
+    --c_blanco: #fff;
+    --c_negro: #000;
+    --c_lila: #D19AD9;
+    --c_celeste: #04B2D9;
+    --c_aquamarino: #04D9B2;
+    --c_amarillo: #F2E750;
+    --c_mostaza: #F2AA52;
+}
