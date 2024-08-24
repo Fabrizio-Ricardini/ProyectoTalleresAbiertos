@@ -1,0 +1,192 @@
+@import url(./styles.css);
+
+.contact-background{
+    background-color: var(--c_mostaza);
+    overflow: hidden;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--c_blanco);
+    border-radius: 1rem;
+    margin: 4rem 5rem;
+    padding: 4rem;
+}
+.form-container h1,
+.form-container p{
+    font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+}
+.form-container h1{
+    font-size: 50pt;
+}
+.form-container p{
+    font-size: var(--f_fontSize);
+    margin-bottom: 2rem;
+    font-size: 25pt;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+.decoration-n{
+    display: none;
+}
+.decoration-e{
+    display: none;
+}
+.decoration-num{
+    display: none;
+}
+.decoration-a{
+    display: none;
+}
+.decoration-m{
+    width: 8px;
+    background-color: var(--c_celeste);
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-contact input,
+.form-contact textarea{
+    font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #f0f0f0;
+    border: solid 2px #a0a0a0;
+    width: 100%;
+}
+.form-contact textarea{
+    resize: vertical;
+    height: 200px;
+}
+.form-contact label{
+    font-family: var(--f_fontFamily--Secundary);
+    margin-bottom: -0.75rem;
+}
+.contact-container img{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+.button-anular{
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+.button-enviar{
+    padding: 1rem 5rem;
+    border-radius: .75rem;
+    background-color: transparent;
+    border: solid 2px #a0a0a0;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px){
+    .contact-container img{
+        display: none;
+    }
+    .contact-background,
+    .contact-container,
+    .form-container{
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container{
+        padding: 3rem 1.5rem;
+    }
+    .form-container h1{
+        font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+        font-size: 24pt;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    .form-container p{
+        margin-bottom: 2.5rem;
+        font-size: 10pt;
+    }
+    .mobile-decoration{
+        display: flex;
+        gap: .3rem;
+    }
+    .decoration-n{
+        display:block;
+        width: 8px;
+        background-color: var(--c_aquamarino);
+    }
+    .decoration-e{
+        display:block;
+        width: 8px;
+        background-color: var(--c_lila);
+    }
+    .decoration-num{
+        display:block;
+        width: 8px;
+        background-color: var(--c_mostaza);
+    }
+    .decoration-a{
+        display:block;
+        width: 8px;
+        background-color: var(--c_amarillo);
+    }
+    .decoration-m{
+        display:block;
+        width: 8px;
+        background-color: var(--c_celeste);
+    }
+    .form-contact input,
+    .form-contact textarea{
+        padding: .3rem;
+        border-radius: 0;
+        width: 100%;
+    }
+    #nombre{
+        border: solid 1px var(--c_aquamarino);
+    }
+    #email{
+        border: solid 1px var(--c_lila);
+    }
+    #numero{
+        border: solid 1px var(--c_mostaza);
+    }
+    #asunto{
+        border: solid 1px var(--c_amarillo);
+    }
+    #mensaje{
+        border: solid 1px var(--c_celeste);
+    }
+    .form-contact label{
+        font-weight: 600;
+    }
+    .button-anular,
+    .button-enviar{
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: .5rem;
+        border: solid 1px var(--c_lila);
+    }
+    .button-anular{
+        text-decoration: none;
+    }
+    .button-enviar{
+        border-radius: 0;
+        background-color: var(--c_lila);
+    }
+}
