@@ -9,7 +9,7 @@
     grid-template-columns: 1fr 1fr;
     background-color: var(--c_blanco);
     border-radius: 1rem;
-    margin: 4rem 5rem;
+    margin: 3rem 4rem;
     padding: 4rem;
 }
 .form-container h1,
@@ -78,6 +78,10 @@
     justify-content: right;
     gap: 1rem;
 }
+.button-anular,
+.button-enviar{
+    font-size: var(--f_fontSize);
+}
 .button-anular{
     padding: 1rem;
     background-color: transparent;
@@ -89,6 +93,13 @@
     border-radius: .75rem;
     background-color: transparent;
     border: solid 2px #a0a0a0;
+}
+/* bajar imagen */
+@media screen and (max-width: 1700px){
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Mobile */
