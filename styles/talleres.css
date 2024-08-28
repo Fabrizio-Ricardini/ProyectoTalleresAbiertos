@@ -1,0 +1,85 @@
+:root
+{
+    font-family: "Raleway", sans-serif;
+    --mobileScreenWidth: 360px
+}
+@media only screen and (max-width: 480px)
+{        
+    /* p
+    {
+        font-family: "Raleway", sans-serif;
+    } */
+    button
+    {
+        border: none;
+    }
+    nav
+    {
+        align-items: normal;  
+        padding: 0;
+        width: var(--mobileScreenWidth);
+    }    
+    .logo
+    {
+        img
+        {
+            width: 150px;
+        }
+    }    
+    .presenter
+    {
+        margin-bottom: 1rem;
+    }
+    .presenter-image
+    {
+        width: var(--mobileScreenWidth);
+    }
+    .workshops-description
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;        
+    }
+    .workshops-description-title
+    {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+    .workshops-carousel
+    {
+        margin: 1rem;
+    }
+    .carousel
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0 0.5rem 0;
+    }    
+    .sub-title
+    {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .workshops-carousel-top-left
+    {
+        width: 120px;        
+    }
+    .workshops-carousel-top-right
+    {
+        width: 200px;
+    }    
+    .workshops-carousel-bottom-left
+    {
+        width: 230px;        
+    }
+    .workshops-carousel-bottom-right
+    {
+        width: 90px;
+    }
+    .presented-workshops
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }    
+}
