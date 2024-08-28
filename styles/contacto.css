@@ -82,7 +82,7 @@ p{
     }
     h1 {
         font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
-        font-size: min(24pt, calc(.8rem + 5vw));
+        font-size: min(24pt, calc(.8rem + 4vw));
         text-transform: uppercase;
         font-weight: 900;
         margin-bottom: 1rem;
