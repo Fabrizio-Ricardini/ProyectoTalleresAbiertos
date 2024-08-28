@@ -5,199 +5,110 @@
     overflow: hidden;
 }
 .contact-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: var(--c_blanco);
     border-radius: 1rem;
-    margin: 3rem 4rem;
     padding: 4rem;
+    width: 50%;
+    margin: 4rem auto 4rem auto;
 }
-.form-container h1,
-.form-container p{
+h1,
+p{
     font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+    text-align: center;
 }
-.form-container h1{
-    font-size: 50pt;
+h1{
+    font-size: min(50pt, calc(.8rem + 2vw));
 }
-.form-container p{
+p{
     font-size: var(--f_fontSize);
     margin-bottom: 2rem;
-    font-size: 25pt;
+    font-size: min(25pt, calc(.8rem + 1vw));
 }
-.form-container{
+#img-ilustrativa{
+    width: 60%;
+    margin: auto;
+}
+.button-mail{
     display: flex;
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-    width: 90%;
-}
-.decoration-n{
-    display: none;
-}
-.decoration-e{
-    display: none;
-}
-.decoration-num{
-    display: none;
-}
-.decoration-a{
-    display: none;
-}
-.decoration-m{
-    width: 8px;
-    background-color: var(--c_celeste);
-}
-.form-contact{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.form-contact input,
-.form-contact textarea{
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--f_fontSize);
     font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
-    padding: 1rem;
-    border-radius: .5rem;
-    background-color: #f0f0f0;
-    border: solid 2px #a0a0a0;
-    width: 100%;
-}
-.form-contact textarea{
-    resize: vertical;
-    height: 200px;
-}
-.form-contact label{
-    font-family: var(--f_fontFamily--Secundary);
-    margin-bottom: -0.75rem;
-}
-.contact-container img{
-    display: block;
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border-radius: .75rem;
+
     width: 75%;
     margin: auto;
 }
-.buttons{
-    display: flex;
-    justify-content: right;
-    gap: 1rem;
+.button-mail img{
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
 }
-.button-anular,
-.button-enviar{
-    font-size: var(--f_fontSize);
+.button-mail{
+    background-color: black;
+    color: #ffffff;
 }
-.button-anular{
-    padding: 1rem;
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-}
-.button-enviar{
-    padding: 1rem 5rem;
-    border-radius: .75rem;
-    background-color: transparent;
-    border: solid 2px #a0a0a0;
-}
-/* bajar imagen */
-@media screen and (max-width: 1700px){
-    .contact-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+.button-mail:hover{
+    background-color: #3b3b3b;
 }
 
 /* Mobile */
-@media screen and (max-width: 600px){
-    .contact-container img{
-        display: none;
-    }
-    .contact-background,
-    .contact-container,
-    .form-container{
-        background-color: transparent;
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: 600px) {
+    #img-ilustrativa{
         width: 100%;
+        margin: auto;
     }
-    .contact-container{
-        display: flex;
-        flex-direction: column;
+    .contact-background {
+        background: 
+            linear-gradient(to bottom, var(--c_lila) 0%, var(--c_lila) 20%),
+            linear-gradient(to bottom, var(--c_celeste) 20%, var(--c_celeste) 40%),
+            linear-gradient(to bottom, var(--c_aquamarino) 40%, var(--c_aquamarino) 60%),
+            linear-gradient(to bottom, var(--c_amarillo) 60%, var(--c_amarillo) 80%),
+            linear-gradient(to bottom, var(--c_mostaza) 80%, var(--c_mostaza) 100%);
+        background-size: 100% 20%;
+        background-repeat: no-repeat;
+        background-position: 0 0, 0 25%, 25% 50%, 50% 75%, 75% 100%;
+        height: 100vh;
     }
-    .form-container{
-        padding: 3rem 1.5rem;
+    .contact-container {
+        width: 90%;
+        height: 75vh;
+        margin: 2rem auto 0 auto;
     }
-    .form-container h1{
+    h1 {
         font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
-        font-size: 24pt;
+        font-size: min(24pt, calc(.8rem + 5vw));
         text-transform: uppercase;
         font-weight: 900;
         margin-bottom: 1rem;
     }
-    .form-container p{
+    p {
         margin-bottom: 2.5rem;
-        font-size: 10pt;
+        font-size: min(15pt, calc(.8rem + 2vw));
     }
-    .mobile-decoration{
-        display: flex;
-        gap: .3rem;
-    }
-    .decoration-n{
-        display:block;
-        width: 8px;
-        background-color: var(--c_aquamarino);
-    }
-    .decoration-e{
-        display:block;
-        width: 8px;
-        background-color: var(--c_lila);
-    }
-    .decoration-num{
-        display:block;
-        width: 8px;
-        background-color: var(--c_mostaza);
-    }
-    .decoration-a{
-        display:block;
-        width: 8px;
-        background-color: var(--c_amarillo);
-    }
-    .decoration-m{
-        display:block;
-        width: 8px;
-        background-color: var(--c_celeste);
-    }
-    .form-contact input,
-    .form-contact textarea{
-        padding: .3rem;
-        border-radius: 0;
-        width: 100%;
-    }
-    #nombre{
-        border: solid 1px var(--c_aquamarino);
-    }
-    #email{
-        border: solid 1px var(--c_lila);
-    }
-    #numero{
-        border: solid 1px var(--c_mostaza);
-    }
-    #asunto{
-        border: solid 1px var(--c_amarillo);
-    }
-    #mensaje{
-        border: solid 1px var(--c_celeste);
-    }
-    .form-contact label{
-        font-weight: 600;
-    }
-    .button-anular,
-    .button-enviar{
+    .button-mail,
+    .button-wpp {
         font-weight: 900;
         text-transform: uppercase;
         padding: .5rem;
         border: solid 1px var(--c_lila);
+        border-radius: 0;
     }
-    .button-anular{
+    .button-mail {
         text-decoration: none;
     }
-    .button-enviar{
-        border-radius: 0;
+    .button-wpp {
         background-color: var(--c_lila);
+    }
+    .button-wpp:hover {
+        background-color: #9a01c0;
+    }
+    .button-mail:hover {
+        background-color: #3b3b3b;
     }
 }
