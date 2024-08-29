@@ -6,11 +6,15 @@
     position:absolute;
     height: 80px;
 }
+nav{
+    z-index: 1;
+}
 .navbar {
     padding: 10px;
     height: 80px;
     width: 100%;
     box-shadow: 2px 2px 5px #bbb;
+    background-color: #FBFBFB;
 }
 nav ul{
     float: right;
@@ -49,7 +53,7 @@ a.active,a:hover{
 #check{
     display: none;
 }
-@media (max-width: 952px) {
+@media (max-width: 768px) {
     .checkbtn{
         display: block;
     }
@@ -58,11 +62,13 @@ a.active,a:hover{
         position: fixed;
         width: 100%;
         height: auto;
-        background: #a5b6c7;
+        background: rgba(125, 229, 236, 0.5);
         margin-top: 70px;
-        left: -120%;
+        bottom: 100%;
         text-align: center;
         transition: all .5s;
+        z-index: -1;
+        left: .1%;
     }
     nav ul li{
         display: block;
@@ -71,12 +77,14 @@ a.active,a:hover{
     }
     nav ul li a{
         font-size: 20px;
+        text-decoration: none;
+        color: black;
     }
     a:hover,a.active{
         background: none;
         color: #D59BD8;
     }
     #check:checked ~ ul{
-        left: 0;
+        bottom: 41.5%;
     }
 }
