@@ -21,7 +21,7 @@
   color: var(--c_blanco);
   position: absolute;
   z-index: 10;
-  top: 50%;
+  top: 40%;
   left: 100px;
 }
 .section1 {
@@ -131,6 +131,7 @@
   background-color: var(--c_lili_transp);
   display: grid;
   grid-template-columns: 1fr 1.1fr 1fr;
+  box-sizing: content-box;
 }
 .cronometro_container {
   background-color: var(--c_lila);
