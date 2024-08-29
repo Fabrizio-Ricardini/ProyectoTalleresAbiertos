@@ -31,6 +31,7 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
+    color: #1E1E1E;
 }
 a.active,a:hover{
     background: #D59BD8;
