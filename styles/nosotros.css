@@ -40,12 +40,12 @@ body, html{
   height: 100%; 
   scroll-behavior: smooth; 
 }
-.primerito{
+.first{
   background-color: var(--c_celeste);
   padding-top: 5px !important;
 }
 
-.first{
+.second{
   background-color: var(--c_blanco);
   border-radius: 8px;
   margin-top: 5em !important;
@@ -165,6 +165,17 @@ p{
     margin-left: 1em !important;
   }
 
+  p{
+    font-size: 1.3em;
+  }
+  .container_card_info h4{
+    font-size: 1.5em !important;
+  }
+
+  .text-with-icon i {
+    font-size: 1.3em;
+  }
+
   .div_info_1{
    width: 150px;
   }
@@ -176,7 +187,7 @@ p{
 
 /* small */
 @media screen and (max-width: 576px) {
-  .first{
+  .second{
    width: 99%;
    display: flex !important;
    flex-wrap: wrap !important;
@@ -227,6 +238,16 @@ p{
     border-width: 4px !important; 
   }
  
+  p{
+    font-size: 1em;
+  }
+  .container_card_info h4{
+    font-size: 1.2em !important;
+  }
+
+  .text-with-icon i {
+    font-size: 1.2em;
+  }
 
   .div_info_1{
    width: 60px;
