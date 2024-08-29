@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Talleres Abiertos</title>
 </head>
 <header>
-    <nav>
-            <a class="logo" href="index.html"><img src="assets/logo.png" alt=""> </a>
-        <ul >
-            <a class="navButtons" href=""><li>Inicio</li></a>
-            <a class="navButtons" href=""><li>Talleres</li></a>
-            <a class="navButtons" href=""><li>Central Park</li></a>
-            <a class="navButtons" href=""><li>Contacto</li></a>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="./assets/Group 12.svg" alt="Menu">
+        </label>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Talleres</a></li>
+            <li><a href="#">Central Park</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
+
 </header>
 <body>
     
 
-    <script src="src/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

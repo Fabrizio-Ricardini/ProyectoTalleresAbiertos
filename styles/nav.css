@@ -1,34 +1,82 @@
-body{
-    margin: 0;
-}
-nav{
+*{
+    margin: 0px;
     font-family: "Raleway", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    background-color: #FBFBFB;
-    box-shadow: 1px 0 8px black;
-    
-    ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        border: 1px solid #d9d9d9;
-        border-radius: 2rem;
-        padding: 0 .5rem 0 .5rem;
-        
-
-        a{
-            text-decoration: none;
-        }
-        li{
-            padding: 1rem;
-        }
-    }
+}
+.logo{
+    position:absolute;
+    height: 80px;
+}
+.navbar {
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    box-shadow: 2px 2px 5px #bbb;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background: #D59BD8;
+    transition: .5s;
 }
 
-.navButtons:hover{
-    color: #D19AD9;
-    text-shadow: 1px 1px 5px #D19AD9;
+@media (max-width: 768px) {
+    
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #D59BD8;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px) {
+    .checkbtn{
+        display: block;
+    }
+    .nav-links{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #a5b6c7;
+        margin-top: 70px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #D59BD8;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
