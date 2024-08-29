@@ -27,9 +27,9 @@
 }
 body{
   min-height: 100dvh;
-  background-color: var(--c_celeste);
   font-family: var(--f_fontFamily)!important;
 }
+
 p{
   text-wrap: pretty;
 }
@@ -40,11 +40,18 @@ body, html{
   height: 100%; 
   scroll-behavior: smooth; 
 }
+.primerito{
+  background-color: var(--c_celeste);
+  padding-top: 5px !important;
+}
 
 .first{
   background-color: var(--c_blanco);
   border-radius: 8px;
-  margin-top: 2em;
+  margin-top: 5em !important;
+  padding-top: 5em !important;
+  margin-bottom: 50px !important;
+  padding-bottom: 50px !important;
 }
 
 .container_card{
