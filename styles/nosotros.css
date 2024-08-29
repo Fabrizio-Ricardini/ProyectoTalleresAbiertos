@@ -59,7 +59,7 @@ body, html{
 }
 
 .cards_imgs{
-  width: 280px !important;
+  width: 320px !important;
   height: auto !important;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 
               0 3px 6px rgba(0, 0, 0, 0.1); 
@@ -73,7 +73,7 @@ body, html{
 }
 
 h1{
-  font-size: 3em !important;
+  font-size: 4.2em !important;
   font-weight: bold;
 }
 .container_card_info{
@@ -135,18 +135,26 @@ p{
 /* ----------mediaqueries------- */
 /* medium */
 @media screen and (min-width: 557px) and (max-width: 990px) {
-
+  .second{
+    background-color: var(--c_blanco);
+    border-radius: 8px;
+    margin-top: 1em !important;
+    padding-top: 1em !important;
+    margin-bottom: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  
   .img_logo{
     display: none;
    }
 
   .container-initial{
    width: 100% !important;
-   margin: 50px 0 15px 0 !important;
+   margin: 10px 0 15px 0 !important;
   }
   .container-us{
     width: 100% !important;
-    margin: 40px 0 10px 0!important;
+    margin: 10px 0 10px 0!important;
     justify-content: start !important;
     align-items: start !important;
   }
@@ -225,8 +233,6 @@ p{
      justify-content: start !important;
      align-items: start !important;
    }
-
- 
  
    .card-html-container{
     width: 98% !important ;
@@ -245,12 +251,15 @@ p{
   .container_card_info{
     border-width: 4px !important; 
   }
- 
+  .cards_imgs{
+    width: 230px !important;
+  }
+
   p{
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .container_card_info h4{
-    font-size: 1.2em !important;
+    font-size: 1em !important;
   }
 
   .text-with-icon i {
@@ -258,7 +267,7 @@ p{
   }
 
   .div_info_1{
-   width: 60px;
+   width: 80px;
    margin-top: 15px !important;
    margin-left: 1px;
 
@@ -267,8 +276,52 @@ p{
    width: 180px;   
   }
   .titulo_nombre {
-    text-align: right !important;  }
+    text-align: right !important;  
+  }
 
 
 }
+/*extra small */
+@media screen and (max-width: 441px) {
+  .second{
+    margin-top: 1em !important;
+    padding: 0 0 !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  h1{
+    font-size: 2.2em !important;
+  } 
+
+   .container-initial{
+    margin: 2px 0 10px 0 !important;
+   }
+   .container-us{
+    margin: 2px 0 8px 0!important;   
+   }
+
+  .container_card{
+    width: 380px !important;
+  }
+  
+  .container_card_info{
+    border-width: 4px !important; 
+    width: 110px;
+  }
+
+  .cards_imgs{
+    width: 50px !important;
+  }
+
+
+  .div_info_1{
+   width: 50px;
+  }
+  .div_info_2{
+   width: 120px;   
+  }
+
+}
+
 
