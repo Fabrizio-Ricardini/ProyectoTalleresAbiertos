@@ -37,6 +37,10 @@ a.active,a:hover{
     transition: .5s;
 }
 
+.nav-logo.active, .nav-logo:hover{
+    background: none;
+}
+
 @media (max-width: 768px) {
     
 }
