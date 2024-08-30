@@ -3,6 +3,7 @@
 .contact-background{
     background-color: var(--c_mostaza);
     overflow: hidden;
+    height: 90vh;
 }
 .contact-container{
     display: flex;
@@ -58,7 +59,7 @@ p{
 }
 
 /* Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #img-ilustrativa{
         width: 100%;
         margin: auto;
