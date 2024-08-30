@@ -47,7 +47,7 @@
   display: grid;
   grid-template-rows: 100px 100px;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+  /* gap: 2px; */
 
   margin-bottom: 100px;
   overflow: hidden;
@@ -423,6 +423,7 @@
   }
   .section_map {
     background-color: transparent;
+    gap: 1rem;
   }
   .section_map h2 {
     font-size: 32px;
@@ -452,6 +453,7 @@
   }
   .section1 div p {
     font-size: 12px;
+    line-height: 1.5rem;
   }
   .section1 div h2 {
     font-size: 32px;

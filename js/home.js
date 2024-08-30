@@ -101,7 +101,7 @@ const handleRezise = () => {
   const talleres_title = document.querySelector("#talleres");
   if (window.innerWidth < 993) {
     title.innerHTML = "<span>Nuestra</span> Ubicacion";
-    talleres_title.innerHTML = "Imagenes de Eventos <span>anteriores</span>";
+    talleres_title.innerHTML = "Nuestros Eventos <span>anteriores</span>";
   } else {
     title.innerHTML = "¡Te esperamos!";
     talleres_title.innerHTML = "Eventos anteriores";
