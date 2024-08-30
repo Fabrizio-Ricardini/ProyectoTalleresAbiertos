@@ -48,8 +48,7 @@ body, html{
 .second{
   background-color: var(--c_blanco);
   border-radius: 8px;
-  margin-top: 5em !important;
-  padding-top: 5em !important;
+  margin-top: 6em !important;
   margin-bottom: 50px !important;
   padding-bottom: 50px !important;
 }
@@ -142,8 +141,7 @@ body, html{
   .second{
     background-color: var(--c_blanco);
     border-radius: 8px;
-    margin-top: 1em !important;
-    padding-top: 1em !important;
+    margin-top: 6em !important;
     margin-bottom: 50px !important;
     padding-bottom: 50px !important;
   }
@@ -154,11 +152,11 @@ body, html{
 
   .container-initial{
    width: 100% !important;
-   margin: 10px 0 15px 0 !important;
+   margin: 2px 0 15px 0 !important;
   }
   .container-us{
     width: 100% !important;
-    margin: 10px 0 10px 0!important;
+    margin: 2px 0 10px 0!important;
     justify-content: start !important;
     align-items: start !important;
   }
@@ -207,12 +205,13 @@ body, html{
    display: flex !important;
    flex-wrap: wrap !important;
    padding: 0 0 !important;
-   margin-top: 2px !important;
+   margin-top: 6em !important;
   }
 
   .container-us h1{
-    font-size: 3em !important;
+    font-size: 2.4em !important;
     font-weight: bold;
+    padding-left: 50px !important;
   }
   
    .card-html-container{
@@ -226,12 +225,12 @@ body, html{
 
    .container-initial{
     width: 100% !important;
-    margin: 10px 0 2px 0 !important;
+    padding-top: 2px !important;
    }
 
    .container-us{
      width: 100% !important;
-     margin: 10px 0 8px 0!important;
+     margin: 2px 0 8px 0!important;
      justify-content: start !important;
      align-items: start !important;
    }
@@ -242,7 +241,7 @@ body, html{
 
    .container-initial{
     width: 100% !important;
-    margin: 10px 0 10px 0 !important;
+    padding-top: 5px;
    }
 
 
@@ -261,6 +260,9 @@ body, html{
     font-size: 0.9em;
   }
   .container-card-info h4{
+    font-size: 1.2em !important;
+  }
+  .container-card-info p{
     font-size: 1em !important;
   }
 
@@ -285,7 +287,7 @@ body, html{
 /*extra small */
 @media screen and (max-width: 441px) {
   .second{
-    margin-top: 1em !important;
+    margin-top: 6em !important;
     padding: 0 0 !important;
     margin-bottom: 20px !important;
     padding-bottom: 20px !important;
@@ -293,19 +295,22 @@ body, html{
 
   .container-us h1{
     font-size: 2.2em !important;
-  } 
 
+  } 
    .container-initial{
     margin: 2px 0 10px 0 !important;
    }
    .container-us{
     margin: 2px 0 8px 0!important;   
+    padding-top: 5px !important;
    }
 
   .container-card{
     width: 380px !important;
   }
-  
+  .container-card-info h4{
+    font-size: 1em !important;
+  }
   .container-card-info{
     border-width: 4px !important; 
     width: 110px;
@@ -321,7 +326,7 @@ body, html{
   .div-info-2{
    width: 120px;   
   }
-
+  
 }
 
 
