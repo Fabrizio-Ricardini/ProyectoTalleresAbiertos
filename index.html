@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
     <title>Talleres Abiertos</title>
 </head>
 
@@ -32,6 +41,114 @@
 
     <!-- Comienzo del Main -->
     <main>
+<<<<<<< HEAD
+=======
+      <section class="video-container">
+        <video src="src/video.mp4" autoplay loop muted class="video"></video>
+        <h1>
+          Talleres <br />
+          abierto
+        </h1>
+      </section>
+      <section class="section1">
+        <div>
+          <h2>Talleres Abiertos</h2>
+          <p>
+            Te invitamos a participar de la 9ª edición de Talleres abiertos,
+            donde contaras con las producciones de mas de 30 artistas en una
+            experiencia audiovisual maravillosa.
+          </p>
+        </div>
+        <img src="src/cp.png" />
+      </section>
+      <section class="section2">
+        <div id="art"><p>Arte</p></div>
+        <div id="creat"><p>Creatividad</p></div>
+        <div id="in"><p>Innocavion</p></div>
+        <div id="es"><p>Estetica</p></div>
+        <div id="ex"><p>Expresion</p></div>
+        <div id="ins"><p>Inspiracion</p></div>
+      </section>
+      <section class="CR">
+        <h3>¡Te esperamos!</h3>
+        <div class="cronometro_container">
+          <div class="cronometro">
+            <span class="letters">Dias</span>
+            <span class="letters">Horas</span>
+            <span class="letters">Minutos</span>
+            <span class="letters">Segundos</span>
+            <span class="num day" id="day">08</span>
+            <span class="colon">:</span>
+            <span class="num hour" id="hour">12</span>
+            <span class="colon">:</span>
+            <span class="num min" id="min">44</span>
+            <span class="colon">:</span>
+            <span class="num sec" id="sec">28</span>
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <blockquote>
+          “El arte no se enseña, se aprende. Es como el amor.”
+        </blockquote>
+        <div class="talleres">
+          <h2 id="talleres">Talleres pasados</h2>
+          <div class="galeria">
+            <div><img src="src/taller1.png" /></div>
+            <div><img src="src/taller2.png" /></div>
+
+            <div><img src="src/taller3.png" /></div>
+          </div>
+          <h2 class="artistas-title">Nuestros Artistas</h2>
+          <div class="artistas">
+            <button class="control" id="left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64  "
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 6l-6 6l6 6" />
+              </svg>
+            </button>
+            <div class="artistas-photo" id="carrousel">
+              <div class="carrousel" id="inner--car"></div>
+            </div>
+            <button class="control" id="right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 6l6 6l-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section_map">
+        <div>
+          <h2 id="direction">¡Te esperamos!</h2>
+          <p>California 2000, Barracas</p>
+        </div>
+        <div id="map">hola</div>
+      </section>
+>>>>>>> 0cd7208585a1c026594154fa5dd4afc024e62d2c
     </main>
     <!-- Comienzo del Footer -->
     <footer class="footer">
@@ -84,6 +201,30 @@
         </div>
     </footer>
     <script src="./js/app.js"></script>
+    <script src="js/home.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script>
+      let map = L.map("map").setView(
+        [-34.64759709014908, -58.37640516189092],
+        17
+      );
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker([-34.64759709014908, -58.37640516189092])
+        .addTo(map)
+        .bindPopup(
+          "<a href='https://www.google.com/maps/place/Central+Park+Centro+Empresarial/@-34.6476346,-58.3768632,20z/data=!4m12!1m5!3m4!2zMzTCsDM4JzUxLjQiUyA1OMKwMjInMzUuMSJX!8m2!3d-34.6475971!4d-58.3764052!3m5!1s0x95bccb522783d079:0x5ff194cefaafd66c!8m2!3d-34.6476248!4d-58.376384!16s%2Fg%2F1w0h8p_l?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D' target='_blank'>Central Park</a>"
+        )
+        .openPopup();
+    </script>
+  </body>
 </body>
 
 </html>

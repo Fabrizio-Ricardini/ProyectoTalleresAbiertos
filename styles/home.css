@@ -1,0 +1,475 @@
+.nav {
+  width: 100%;
+  height: 120px;
+  background-color: var(--c_lila);
+}
+
+.video {
+  height: auto;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+
+  width: 100%;
+}
+.video-container h1 {
+  font-family: var(--f_fontFamily);
+
+  font-size: 128px;
+  color: var(--c_blanco);
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 100px;
+}
+.section1 {
+  color: #263238;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  font-family: var(--f_fontFamily);
+}
+
+.section1 div {
+  width: 520px;
+}
+.section1 div p {
+  font-size: 36px;
+}
+.section1 div h2 {
+  font-size: 64px;
+}
+.section2 {
+  font-family: var(--f_fontFamily);
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.section2 div {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--c_blanco);
+  transform: skew(-30deg);
+  position: relative;
+}
+.section2 div p {
+  transform: skew(30deg);
+}
+
+.section2 div:nth-child(1) {
+  background-color: var(--c_lila);
+}
+.section2 div:nth-child(1)::before {
+  content: "";
+  background-color: var(--c_lila);
+  height: 100%;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.section2 div:nth-child(2) {
+  background-color: var(--c_celeste);
+}
+.section2 div:nth-child(3) {
+  background-color: var(--c_mostaza);
+}
+.section2 div:nth-child(3)::after {
+  content: "";
+  background-color: var(--c_mostaza);
+  height: 100%;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.section2 div:nth-child(4) {
+  background-color: var(--c_amarillo);
+}
+.section2 div:nth-child(4)::before {
+  content: "";
+  background-color: var(--c_amarillo);
+  height: 100%;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.section2 div:nth-child(5) {
+  background-color: var(--c_aquamarino);
+}
+.section2 div:nth-child(6) {
+  background-color: var(--c_lila);
+}
+.section2 div:nth-child(6)::after {
+  content: "";
+  background-color: var(--c_lila);
+  height: 100%;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+.CR {
+  color: #263238;
+  width: 100%;
+  height: 150px;
+  background-color: var(--c_lili_transp);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  box-sizing: content-box;
+}
+.cronometro_container {
+  background-color: var(--c_lila);
+  transform: skew(-30deg);
+  padding: 15px 0;
+}
+.cronometro {
+  transform: skew(30deg);
+  font-family: var(--f_fontFamily);
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "day . hour . min . sec"
+    "numDay dayColon numHour hourColon numMin minColon numSec";
+}
+.cronometro span {
+  justify-self: center;
+  align-self: center;
+  position: relative;
+}
+.cronometro .num,
+.cronometro .colon {
+  font-size: 48px;
+}
+.cronometro .latters {
+  font-size: 14px;
+}
+
+.cronometro span:nth-child(1) {
+  grid-area: day;
+}
+.cronometro span:nth-child(2) {
+  grid-area: hour;
+}
+.cronometro span:nth-child(3) {
+  grid-area: min;
+}
+.cronometro span:nth-child(4) {
+  grid-area: sec;
+}
+.cronometro span:nth-child(5) {
+  grid-area: numDay;
+}
+.cronometro span:nth-child(6) {
+  grid-area: dayColon;
+}
+.cronometro span:nth-child(7) {
+  grid-area: numHour;
+}
+.cronometro span:nth-child(8) {
+  grid-area: hourColon;
+}
+.cronometro span:nth-child(9) {
+  grid-area: numMin;
+}
+.cronometro span:nth-child(10) {
+  grid-area: minColon;
+}
+.cronometro span:nth-child(11) {
+  grid-area: numSec;
+}
+
+.CR h3 {
+  font-family: var(--f_fontFamily);
+  justify-self: center;
+  align-self: center;
+  font-size: 48px;
+}
+
+.section4 {
+  text-align: center;
+  background-color: var(--c_lili_transp);
+  width: 100%;
+}
+.section4 blockquote {
+  font-size: 48px;
+  padding: 20px 0;
+  box-sizing: content-box;
+}
+
+.section4 .talleres {
+  background-color: var(--c_lila);
+  color: var(--c_blanco);
+  padding: 20px 0;
+}
+.section4 .talleres h2 {
+  font-size: 64px;
+  font-family: var(--f_fontFamily);
+  text-shadow: 2px 2px 5px var(--c_azul);
+}
+.section4 .galeria {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.section4 .galeria div {
+  max-width: 550px;
+  height: auto;
+  flex: 1;
+  box-sizing: content-box;
+}
+
+.section4 .galeria div img {
+  width: 100%;
+}
+.galeria {
+  margin: 50px 0;
+}
+.artistas {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin: 50px 0;
+}
+
+.artistas-photo {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.photo-container {
+  display: flex;
+
+  flex: 0 0 100%;
+  justify-content: space-evenly;
+}
+
+.photo-container div {
+  max-width: 550px;
+  height: 550px;
+  padding: 5px;
+}
+.photo-container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.photo-container div img[alt="horacion Sanchez Fantino"] {
+  object-position: right;
+}
+.control {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section_map {
+  width: 100%;
+  height: 425px;
+  background-color: var(--c_mostaza);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section_map h2 {
+  font-size: 64px;
+}
+.section_map h2 span {
+  font-weight: 100;
+}
+.section_map p {
+  font-size: 32px;
+}
+.section_map div {
+  font-family: var(--f_fontFamily);
+  text-align: center;
+}
+#map {
+  height: 300px;
+  width: 1000px;
+}
+
+@media (max-width: 1200px) {
+  .video-container {
+    text-align: center;
+  }
+  #map {
+    width: 100%;
+  }
+  .video-container h1 {
+    display: none;
+  }
+  .section1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .section1 div {
+    width: 100%;
+  }
+  .section1 img {
+    display: none;
+  }
+  .section2 {
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2em 30px 2rem 85px;
+    gap: 10px;
+
+    grid-template-areas:
+      "ex es art art"
+      "in in art art"
+      "in in creat creat"
+      "ins ins ins ins";
+    padding: 20px;
+  }
+  .section2 div {
+    transform: skew(0);
+    position: relative;
+    justify-content: start;
+    align-items: end;
+  }
+  .section2 div p {
+    transform: skew(0);
+    color: var(--c_azul);
+    opacity: 0.2;
+    font-weight: 700;
+  }
+  #ex {
+    font-size: 1rem;
+    grid-area: ex;
+  }
+  #es {
+    font-size: 1rem;
+    grid-area: es;
+  }
+  #es::before {
+    display: none;
+  }
+  #art {
+    font-size: 3rem;
+    grid-area: art;
+  }
+  #art::before {
+    display: none;
+  }
+  #in {
+    font-size: 25px;
+    grid-area: in;
+  }
+  #in::after {
+    display: none;
+  }
+  #creat {
+    font-size: 1.5rem;
+    grid-area: creat;
+  }
+  #ins {
+    font-size: 3rem;
+    grid-area: ins;
+  }
+  #ins::after {
+    display: none;
+  }
+  .CR {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: inherit;
+  }
+  .cronometro_container {
+    padding: 0;
+    transform: skew(0);
+    padding: 0 20px;
+  }
+  .cronometro {
+    transform: skew(0);
+  }
+  .section_map {
+    background-color: transparent;
+  }
+  .section_map h2 {
+    font-size: 32px;
+  }
+  .section_map p {
+    font-size: 16px;
+  }
+  .section4 blockquote {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .artistas {
+    display: none;
+  }
+  .cronometro_container {
+    background-color: var(--c_celeste);
+  }
+  .artistas-title {
+    display: none;
+  }
+  .section1 div p {
+    font-size: 12px;
+  }
+  .section1 div h2 {
+    font-size: 32px;
+  }
+  .section4 .talleres {
+    background-color: inherit;
+  }
+  .section4 {
+    background-color: transparent;
+  }
+  .section4 .talleres h2 {
+    color: var(--c_azul);
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .section4 .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .CR h3 {
+    font-size: 32px;
+  }
+  .section4 blockquote {
+    font-size: 24px;
+  }
+  .section4 .talleres h2 {
+    font-size: 32px;
+  }
+}
