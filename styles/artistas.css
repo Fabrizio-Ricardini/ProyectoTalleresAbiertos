@@ -4,7 +4,7 @@
 }
 .Hero{
     height: 70%;
-    
+
     img{
         position: relative;
         top: -4.1%;
@@ -40,8 +40,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
     margin-bottom: 10px;
+    gap: 7px;
   }
-  
+
   .item {
     /* Mantén todos los items con la misma altura */
     height: 200px; /* Puedes ajustar la altura según sea necesario */
@@ -66,7 +67,8 @@
 }
 .name{
     font-weight: bold;
-    color: #557b84;
+    font-size: 11px;
+    color: #e5e5e5;
     position: relative;
     bottom: -45%;
     left: -35px;
@@ -78,83 +80,83 @@
 .artist1{
 
     background-image: url(../assets/augustoZanela.jpg);
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .artist2{
     background-image: url(../assets/Andrea\ Allen.png);
-    min-height: 400px;
+    min-height: 300px;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .artist3{
     background-image: url(../assets/EugenioCuttica.png);
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .artist4{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/Cecilia-Ivanchevich.jpg);
 }
 .artist5{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/DanielCorvino.png);
 }
 .artist6{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/ceciliaDuhau.jpg);
 }
 .artist7{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/hoffmann.jpg);
 }
 .artist8{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/FernandoBrizuela.png);
 }
 .artist9{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/horacionSanchezFantino.jpg);
 }
 .artist10{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/monicaTiezzi.jpg);
 }
 .artist11{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/martina-servio.jpg);
 }
 .artist12{
-    min-height: 400px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,6 +215,7 @@
     max-height: 300px;
 }
 }
+@media (min-width: 769px){
 
     .close, .appear{
         display: block;
@@ -245,4 +248,4 @@
       .container:nth-of-type(even) .item:nth-child(2) {
         grid-column: span 2; /* Items en posición par ocupan 2 columnas en las filas pares */
       }
-
+    }
