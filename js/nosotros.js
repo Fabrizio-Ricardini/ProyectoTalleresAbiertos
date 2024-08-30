@@ -5,8 +5,8 @@ const us = [
     surname: "Ricardini",
     role: "Proyect Manager / Desarrollo",
     linkedin: "https://www.linkedin.com/in/fabrizio-ricardini/ ",
-    photo: "../img/Fabrizio-Ricardini.jpg",
-    color: "container_card_c1",
+    photo: "../src/nosotros/Fabrizio-Ricardini.jpg",
+    color: "container-card-c1",
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ const us = [
     surname: "Friedrich",
     role: "Desarrollo",
     linkedin: "https://www.linkedin.com/in/santiago-martin-claros-friedrich-122323223/",
-    photo: "../img/santiago_fried.jpeg",
-    color: "container_card_c2",
+    photo: "../src/nosotros/santiago_fried.jpeg",
+    color: "container-card-c2",
   },
   {
     id: 3,
@@ -23,8 +23,8 @@ const us = [
     surname: "Lugo",
     role: "Desarrollo",
     linkedin: "https://www.linkedin.com/in/dantelugo/",
-    photo: "../img/dante_lugo.jpg",
-    color: "container_card_c3",
+    photo: "../src/nosotros/dante_lugo.jpg",
+    color: "container-card-c3",
   },
   {
     id: 4,
@@ -32,8 +32,8 @@ const us = [
     surname: "Acosta",
     role: "Desarrollo",
     linkedin: "https://www.linkedin.com/in/acosta-rocio/",
-    photo: "../img/rocio_acosta.jpeg",
-    color: "container_card_c4",
+    photo: "../src/nosotros/rocio_acosta.jpeg",
+    color: "container-card-c4",
   },
   {
     id: 5,
@@ -41,8 +41,8 @@ const us = [
     surname: "Romero",
     role: "Información",
     linkedin: "https://www.linkedin.com/in/maia-romero18/",
-    photo: "../img/MaiaAylenRomero.jpg",
-    color: "container_card_c5",
+    photo: "../src/nosotros/MaiaAylenRomero.jpg",
+    color: "container-card-c5",
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ const us = [
     surname: "Pimentel",
     role:"Diseño",
     linkedin: "https://www.linkedin.com/in/araceli-pimentel/",
-    photo: "../img/Araceli_Pimentel.png",
-    color: "container_card_c1",
+    photo: "../src/nosotros/Araceli_Pimentel.png",
+    color: "container-card-c1",
   },
   {
     id: 7,
@@ -59,8 +59,8 @@ const us = [
     surname: "Ojeda",
     role: "Información",
     linkedin: "https://www.linkedin.com/in/julietaaylenojeda/",
-    photo: "../img/Julieta_ojeda.png",
-    color: "container_card_c2",
+    photo: "../src/nosotros/Julieta_ojeda.png",
+    color: "container-card-c2",
   },
   {
     id: 8,
@@ -68,8 +68,8 @@ const us = [
     surname: "Pergola",
     role: "Diseño",
     linkedin: "https://www.linkedin.com/in/anapergola/",
-    photo: "../img/AnaPergola.jpg",
-    color: "container_card_c3",
+    photo: "../src/nosotros/AnaPergola.jpg",
+    color: "container-card-c3",
   },
   {
     id: 9,
@@ -77,8 +77,8 @@ const us = [
     surname: "Vargas",
     role: "Desarrollo",
     linkedin: "www.linkedin.com/in/vargasalan03/",
-    photo: "../img/Vargas_Alan.jpeg",
-    color: "container_card_c4",
+    photo: "../src/nosotros/Vargas_Alan.jpeg",
+    color: "container-card-c4",
   },
   {
     id: 10,
@@ -86,8 +86,8 @@ const us = [
     surname: "Appella",
     role: "Información",
     linkedin: "www.linkedin.com/in/axel-appella-a54512255/",
-    photo: "../img/AxelAppella.jpeg",
-    color: "container_card_c5",
+    photo: "../src/nosotros/AxelAppella.jpeg",
+    color: "container-card-c5",
   },
   {
     id: 11,
@@ -95,8 +95,8 @@ const us = [
     surname: "Leguero",
     role: "Desarrollo",
     linkedin: "https://www.linkedin.com/in/axel-leguero/",
-    photo: "../img/AxelLeguero.jpeg",
-    color: "container_card_c1",
+    photo: "../src/nosotros/AxelLeguero.jpeg",
+    color: "container-card-c1",
   },
   {
     id: 12,
@@ -104,8 +104,8 @@ const us = [
     surname: "Erceg",
     role: "Desarrollo",
     linkedin: "www.linkedin.com/in/gonzalo-erceg/",
-    photo: "../img/GonzaloErceg.webp",
-    color: "container_card_c2",
+    photo: "../src/nosotros/GonzaloErceg.webp",
+    color: "container-card-c2",
   },
   {
     id: 13,
@@ -113,8 +113,8 @@ const us = [
     surname: "Heredia",
     role: "Diseño / Desarrollo",
     linkedin: "www.linkedin.com/in/gustavo-heredia-49b01621b/",
-    photo: "../img/Gustavo_Heredia.png",
-    color: "container_card_c3",
+    photo: "../src/nosotros/Gustavo_Heredia.png",
+    color: "container-card-c3",
   },
   {
     id: 14,
@@ -122,8 +122,8 @@ const us = [
     surname: "Enriquez",
     role: "Desarrollo",
     linkedin: "www.linkedin.com/in/camiloenz/",
-    photo: "../img/camiloEnriquez.jpg",
-    color: "container_card_c4",
+    photo: "../src/nosotros/camiloEnriquez.jpg",
+    color: "container-card-c4",
   },
 ];
 
@@ -134,13 +134,13 @@ us.map((obj) => {
   if (obj.id % 2 !== 0) {
     card.innerHTML += `
             
-                <div class="card mb-3 card_a border border-0 col-md-12 container_card">
-                    <div class="row g-0 container_card_2">
-                        <div class="col-md-4 div_info_1">
-                            <img src="${obj.photo}" class="img-fluid rounded-start rounded cards_imgs">
+                <div class="card mb-3 border border-0 col-md-12 container-card">
+                    <div class="row g-0 container-card-2">
+                        <div class="col-md-4 div-info-1">
+                            <img src="${obj.photo}" class="img-fluid rounded-start rounded cards-imgs">
                         </div>
-                        <div class="col-md-8 div_info_2">
-                            <div class="card-body border-start container_card_info container_card_info_a ${obj.color} align-middle">
+                        <div class="col-md-8 div-info-2">
+                            <div class="card-body border-start container-card-info container-card-info-a ${obj.color} align-middle">
                                 <h4 class="card-title">${obj.name} <b>${obj.surname}</b></h4>
                                 <p class="card-text">${obj.role}</p>
                                 <p class="card-text text-with-icon"><a class="text-secondary" href="${obj.linkedin}"><i class="material-icons icon-class"> link </i> Linkedin</a></a></p>
@@ -153,17 +153,17 @@ us.map((obj) => {
   } else {
     card.innerHTML += `
           
-           <div class="card mb-3 border border-0 card_b col-md-12 ms-auto container_card">
-                <div class="row g-0 container_card_2">
-                    <div class="col-md-8  div_info_2">
-                        <div class="card-body border-end container_card_info container_card_info_b ${obj.color} align-middle d-flex align-items-end flex-column mb-3 ">
-                            <h4 class="card-title titulo_nombre">${obj.name} <b>${obj.surname}</b></h4>
+           <div class="card mb-3 border border-0 col-md-12 ms-auto container-card">
+                <div class="row g-0 container-card-2">
+                    <div class="col-md-8  div-info-2">
+                        <div class="card-body border-end container-card-info container-card-info-b ${obj.color} align-middle d-flex align-items-end flex-column mb-3 ">
+                            <h4 class="card-title name-title">${obj.name} <b>${obj.surname}</b></h4>
                             <p class="card-text">${obj.role}</p>
                             <p class="card-text text-with-icon"><a class="text-secondary" href="${obj.linkedin}"><i class="material-icons icon-class">link</i> Linkedin</a></p>
                         </div>
                     </div>
-                    <div class="col-md-4  div_info_1">
-                        <img src="${obj.photo}" class="img-fluid rounded-start rounded cards_imgs">
+                    <div class="col-md-4  div-info-1">
+                        <img src="${obj.photo}" class="img-fluid rounded-start rounded cards-imgs">
                     </div>
                 </div>
             </div>
