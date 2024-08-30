@@ -11,18 +11,18 @@
 
 .video-container {
   position: relative;
-
   width: 100%;
 }
 .video-container h1 {
   font-family: var(--f_fontFamily);
-
   font-size: 128px;
   color: var(--c_blanco);
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   top: 40%;
   left: 100px;
+  text-shadow: 1px 1px 2px black;
+
 }
 .section1 {
   color: #263238;
@@ -138,6 +138,11 @@
   transform: skew(-30deg);
   padding: 1rem 1.5rem;
 }
+
+.letters{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .cronometro {
   transform: skew(30deg);
   font-family: var(--f_fontFamily);
@@ -216,6 +221,7 @@
   padding: 20px 0;
   box-sizing: content-box;
   font-style: italic;
+  color: #263238;
 }
 
 .section4 .talleres {
@@ -390,7 +396,7 @@
     display: none;
   }
   #in {
-    font-size: 25px;
+    font-size: 2rem;
     grid-area: in;
   }
   #in::after {
@@ -410,7 +416,7 @@
   .CR {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: inherit;
   }
   .cronometro_container {
@@ -476,6 +482,7 @@
   }
   .CR h3 {
     font-size: 32px;
+    padding: 0 0 .5rem 0;
   }
   .section4 blockquote {
     font-size: 24px;
@@ -483,4 +490,15 @@
   .section4 .talleres h2 {
     font-size: 32px;
   }
+  #in {
+    font-size: 1.5rem;
+  }
+  #map{
+    z-index: 0;
+  }
+
+  .letters {
+    font-size: 1.2rem;
+  }
+
 }

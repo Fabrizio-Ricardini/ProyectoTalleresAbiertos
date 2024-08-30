@@ -70,7 +70,7 @@ a.active,a:hover{
         position: fixed;
         width: 105%;
         height: auto;
-        background: rgba(125, 229, 236, 0.5);
+        background: rgba(125, 229, 236, 0.9);
         margin-top: 70px;
         left: -120%;
         text-align: center;
