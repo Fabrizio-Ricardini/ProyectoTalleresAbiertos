@@ -127,7 +127,7 @@
 .CR {
   color: #263238;
   width: 100%;
-  height: 150px;
+  /* height: 150px; */
   background-color: var(--c_lili_transp);
   display: grid;
   grid-template-columns: 1fr 1.1fr 1fr;
@@ -136,7 +136,7 @@
 .cronometro_container {
   background-color: var(--c_lila);
   transform: skew(-30deg);
-  padding: 15px 0;
+  padding: 1rem 1.5rem;
 }
 .cronometro {
   transform: skew(30deg);
@@ -215,6 +215,7 @@
   font-size: 48px;
   padding: 20px 0;
   box-sizing: content-box;
+  font-style: italic;
 }
 
 .section4 .talleres {
@@ -231,9 +232,10 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  padding: 0 1.5rem;
 }
 .section4 .galeria div {
-  max-width: 550px;
+  max-width: 38rem;
   height: auto;
   flex: 1;
   box-sizing: content-box;
@@ -294,12 +296,13 @@
 }
 .section_map {
   width: 100%;
-  height: 425px;
+  /* height: 425px; */
   background-color: var(--c_mostaza);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 .section_map h2 {
   font-size: 64px;
@@ -332,6 +335,7 @@
   .section1 {
     text-align: center;
     text-transform: uppercase;
+    padding: 1rem 3rem;
   }
   .section1 div {
     width: 100%;
@@ -427,7 +431,9 @@
     font-size: 16px;
   }
   .section4 blockquote {
-    display: none;
+    /* display: none; */
+    padding: 1rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -440,6 +446,9 @@
   }
   .artistas-title {
     display: none;
+  }
+  .section1 {
+    padding: 1rem 3rem;
   }
   .section1 div p {
     font-size: 12px;
