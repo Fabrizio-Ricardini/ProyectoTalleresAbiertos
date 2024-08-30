@@ -6,8 +6,10 @@
     --mobileScreenWidth: 360px;
     --c_lili_transp: hsl(292, 45%, 73%, 20%);
 }
-@media only screen and (max-width: 480px)
-{        
+@media only screen and (max-width: 480px) {   
+  section, h1 {
+    display: none;
+  }
     /* p
     {
         font-family: "Raleway", sans-serif;
@@ -87,188 +89,198 @@
     }    
 }
 
-.titulo-principal {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: var(--c_blanco);
-    width: 30%;
-    text-shadow: black 1px 1px 1px;
-}
+@media screen and (min-width:769px) {
+    
+    .titulo-principal {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: var(--c_blanco);
+      width: 30%;
+      text-shadow: black 1px 1px 1px;
+      
+    }
+  .presenter{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-left: 6vw;
+      height: 100vh;
+      
+      background-image: url(../assets/coleccionPrivadaCentralPark.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
 
-.presenter{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 6vw;
-    height: 100vh;
+  .presenter-image {
+      display: none;
+  }
 
-    background-image: url(../assets/coleccionPrivadaCentralPark.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.presenter-image {
-    display: none;
-}
-
-.workshops-description {
+  .workshops-description {
     display: flex;
     flex-direction: column;
     margin: 2rem;
-}
+  }
 
-.listado-talleres-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+  .listado-talleres-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      
+      height: 100vh;
+  }
 
-    height: 100vh;
-}
+  .listado-talleres-container img {
+      width: 40%;
+      height: 60%;
+      border-radius: 25px;
+      object-fit: cover;
+  }
 
-.listado-talleres-container img {
-    width: 40%;
-    height: 60%;
-    border-radius: 25px;
-    object-fit: cover;
-}
+  .listado-talleres-container h2 {
+      margin-bottom: 15px;
+      font-size: 30px;
+  }
 
-.listado-talleres-container h2 {
-    margin-bottom: 15px;
-    font-size: 30px;
-}
-
-.listado-talleres-container li {
+  .listado-talleres-container li {
     list-style-type: none;
     font-size: 30px;
+  }
+
+  .CR {
+      color: #263238;
+      width: 100%;
+      height: 150px;
+      background-color: var(--c_lili_transp);
+      display: grid;
+      grid-template-columns: 1fr 1.1fr 1fr;
+      box-sizing: content-box;
+    }
+    .cronometro_container {
+      background-color: var(--c_lila);
+      transform: skew(-30deg);
+      padding: 15px 0;
+    }
+    .cronometro {
+      transform: skew(30deg);
+      font-family: var(--f_fontFamily);
+      
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "day . hour . min . sec"
+        "numDay dayColon numHour hourColon numMin minColon numSec";
+    }
+    .cronometro span {
+      justify-self: center;
+      align-self: center;
+      position: relative;
+    }
+    .cronometro .num,
+    .cronometro .colon {
+      font-size: 48px;
+    }
+    .cronometro .latters {
+      font-size: 14px;
+    }
+    
+    .cronometro span:nth-child(1) {
+      grid-area: day;
+    }
+    .cronometro span:nth-child(2) {
+      grid-area: hour;
+    }
+    .cronometro span:nth-child(3) {
+      grid-area: min;
+    }
+    .cronometro span:nth-child(4) {
+      grid-area: sec;
+    }
+    .cronometro span:nth-child(5) {
+      grid-area: numDay;
+    }
+    .cronometro span:nth-child(6) {
+      grid-area: dayColon;
+    }
+    .cronometro span:nth-child(7) {
+      grid-area: numHour;
+    }
+    .cronometro span:nth-child(8) {
+      grid-area: hourColon;
+    }
+    .cronometro span:nth-child(9) {
+      grid-area: numMin;
+    }
+    .cronometro span:nth-child(10) {
+      grid-area: minColon;
+    }
+    .cronometro span:nth-child(11) {
+      grid-area: numSec;
+    }
+    
+    .CR h3 {
+      font-family: var(--f_fontFamily);
+      justify-self: center;
+      align-self: center;
+      font-size: 48px;
+    }
+    
+    .imagenes-container {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--c_lila);
+      height: 100vh;
+    }
+
+    .imagenes-container h3 {
+      font-size: 20px;
+      margin: 20px 0px 0px 20px;
+      color: #fff
+    }
+
+    .images-container-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .row1 {
+      margin: 20px 20px;
+    }
+    .row2 {
+      margin: 0px 20px 0px 20px;
+    }
+    
+    .images-large {
+      width: 59%;
+      height: 40vh;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .images-short {
+      width: 39%;
+      height: 40vh;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+  .workshops-description-title, 
+  .workshops-description-text,
+  .workshops-carousel,
+  .presented-workshops {
+      display: none;
+  }
 }
 
-.CR {
-    color: #263238;
-    width: 100%;
-    height: 150px;
-    background-color: var(--c_lili_transp);
-    display: grid;
-    grid-template-columns: 1fr 1.1fr 1fr;
-    box-sizing: content-box;
-  }
-  .cronometro_container {
-    background-color: var(--c_lila);
-    transform: skew(-30deg);
-    padding: 15px 0;
-  }
-  .cronometro {
-    transform: skew(30deg);
-    font-family: var(--f_fontFamily);
-  
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "day . hour . min . sec"
-      "numDay dayColon numHour hourColon numMin minColon numSec";
-  }
-  .cronometro span {
-    justify-self: center;
-    align-self: center;
-    position: relative;
-  }
-  .cronometro .num,
-  .cronometro .colon {
-    font-size: 48px;
-  }
-  .cronometro .latters {
-    font-size: 14px;
-  }
-  
-  .cronometro span:nth-child(1) {
-    grid-area: day;
-  }
-  .cronometro span:nth-child(2) {
-    grid-area: hour;
-  }
-  .cronometro span:nth-child(3) {
-    grid-area: min;
-  }
-  .cronometro span:nth-child(4) {
-    grid-area: sec;
-  }
-  .cronometro span:nth-child(5) {
-    grid-area: numDay;
-  }
-  .cronometro span:nth-child(6) {
-    grid-area: dayColon;
-  }
-  .cronometro span:nth-child(7) {
-    grid-area: numHour;
-  }
-  .cronometro span:nth-child(8) {
-    grid-area: hourColon;
-  }
-  .cronometro span:nth-child(9) {
-    grid-area: numMin;
-  }
-  .cronometro span:nth-child(10) {
-    grid-area: minColon;
-  }
-  .cronometro span:nth-child(11) {
-    grid-area: numSec;
-  }
-  
-  .CR h3 {
-    font-family: var(--f_fontFamily);
-    justify-self: center;
-    align-self: center;
-    font-size: 48px;
-  }
-
-  .imagenes-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--c_lila);
-    height: 100vh;
-  }
-
-  .imagenes-container h3 {
-    font-size: 20px;
-    margin: 20px 0px 0px 20px;
-    color: #fff
-  }
-
-  .images-container-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .row1 {
-    margin: 20px 20px;
-  }
-  .row2 {
-    margin: 0px 20px 0px 20px;
-  }
-  
-  .images-large {
-    width: 59%;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-
-  .images-short {
-    width: 39%;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-
-.workshops-description-title, 
-.workshops-description-text,
-.workshops-carousel,
-.presented-workshops {
+@media (min-width: 481px) and (max-width: 768px){
+  body {
     display: none;
+  }
 }
+
