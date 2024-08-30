@@ -1,27 +1,37 @@
 /* Reseteo de Estilos General */
 
-*, *::before, *::after{
-    box-sizing: border-box; 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    min-height: 100dvh;
+body {
+  min-height: 100dvh;
 }
-p{
-    text-wrap: pretty;
+p {
+  text-wrap: pretty;
 }
-h1,h2,h3,h4,h5,h6{
-    text-wrap: balance;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
-body, html{
-    height: 100%; 
-    scroll-behavior: smooth; 
+body,
+html {
+  font-size: 16px;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 /* Declaracion de colores  y Font*/
 :root {
+<<<<<<< HEAD
     /*-- Font --*/
     --f_fontSize: 16px;
     --f_fontWeight: 400;
@@ -38,3 +48,23 @@ body, html{
     --c_mostaza: #F2AA52;
 }
 
+=======
+  /*-- Font --*/
+
+  --f_fontSize: 16px;
+  --f_fontWeight: 400;
+  --f_fontFamily: "Raleway", sans-serif;
+  --f_fontFamily--Secundary: "Roboto", sans-serif;
+  --f_lineHeight: 1.5;
+  /*-- Colour --*/
+  --c_blanco: #fff;
+  --c_negro: #000;
+  --c_lila: #d19ad9;
+  --c_lili_transp: hsl(292, 45%, 73%, 20%);
+  --c_celeste: #04b2d9;
+  --c_aquamarino: #04d9b2;
+  --c_amarillo: #f2e750;
+  --c_mostaza: #f2aa52;
+  --c_azul: #263238;
+}
+>>>>>>> origin/Home

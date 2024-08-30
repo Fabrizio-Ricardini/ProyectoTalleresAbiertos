@@ -1,46 +1,12 @@
-# ProyectoTalleresAbiertos
+# Proyecto Talleres Abiertos
 
+Este proyecto es una página web para un evento el Centro Empresarial Central Park desarrollada por estudiantes de distintas comisiones de la Fundación Pescar.
+## Referencias de Colores
 
-
-
-
-
-
-
-
------------------------------
-
-
-            <div>
-                <div class="card mb-3 tarjeta_a border border-0 col-md-4">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="${obj.photo}" class="img-fluid rounded-start rounded">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h4 class="card-title">${obj.name} <b>${obj.surname}</b></h4>
-                                <p class="card-text">${obj.role}</p>
-                                <p class="card-text">${linkedin}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card mb-3 border border-0 tarjeta_b col-md-4 ms-auto">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h4 class="card-title">${obj.name} <b>${obj.surname}</b></h4>
-                            <p class="card-text">${obj.role}</p>
-                            <p class="card-text">${obj.linkedin}</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="${obj.photo}" class="img-fluid rounded-start rounded">
-                    </div>
-                </div>
-            </div>
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Lila | ![#D19AD9](https://via.placeholder.com/10/D19AD9?text=+) #D19AD9 |
+| Celeste | ![#04B2D9](https://via.placeholder.com/10/04B2D9?text=+) #04B2D9 |
+| Verde | ![#04D9B2](https://via.placeholder.com/10/04D9B2?text=+) #04D9B2 |
+| Amarillo | ![#F2E750](https://via.placeholder.com/10/F2E750?text=+) #F2E750 |
+| Mostaza | ![#F2AA52](https://via.placeholder.com/10/F2AA52?text=+) #F2AA52 |
