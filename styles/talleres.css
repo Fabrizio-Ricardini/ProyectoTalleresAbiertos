@@ -1,85 +1,77 @@
-:root
-{
-    font-family: "Raleway", sans-serif;
-    --mobileScreenWidth: 360px
+:root {
+    font-family: "Raleway", sans-serif;   
 }
-@media only screen and (max-width: 480px)
-{        
-    /* p
-    {
-        font-family: "Raleway", sans-serif;
-    } */
-    button
-    {
-        border: none;
-    }
-    nav
-    {
-        align-items: normal;  
-        padding: 0;
-        width: var(--mobileScreenWidth);
-    }    
-    .logo
-    {
-        img
-        {
-            width: 150px;
-        }
-    }    
-    .presenter
-    {
+@media (max-width: 768px) {
+    .presenter {
         margin-bottom: 1rem;
     }
-    .presenter-image
-    {
-        width: var(--mobileScreenWidth);
+
+    .presenter-image {
+        width: 100%;
     }
-    .workshops-description
-    {
+
+    .workshops-description {
         display: flex;
         flex-direction: column;
-        margin: 1rem;        
+        margin: 1rem;
     }
-    .workshops-description-title
-    {
+
+    .workshops-description-title {
         font-size: 1.9rem;
         margin-bottom: 1rem;
     }
-    .workshops-carousel
-    {
+
+    .workshops-slider {
         margin: 1rem;
+        overflow: hidden;
     }
-    .carousel
-    {
+
+    .slider {
         display: flex;
         justify-content: space-between;
         margin: 0.5rem 0 0.5rem 0;
-    }    
-    .sub-title
-    {
+    }
+
+    .sub-title {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    .workshops-carousel-top-left
-    {
-        width: 120px;        
+
+    .slider-top {
+        animation: slideLeft 20s linear infinite;
     }
-    .workshops-carousel-top-right
-    {
-        width: 200px;
-    }    
-    .workshops-carousel-bottom-left
-    {
-        width: 230px;        
+
+    .slider-bottom {
+        animation: slideRight 20s linear infinite;
     }
-    .workshops-carousel-bottom-right
-    {
-        width: 90px;
+
+    .slider-item {
+        margin: 0.25rem;
+        height: 20vh;
+        object-fit: cover;
     }
-    .presented-workshops
-    {
+    .presented-workshops {
         display: flex;
         flex-direction: column;
         margin: 1rem;
-    }    
+    }
+
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-25vw * 4));            
+        }
+    }
+    @keyframes slideRight {
+        0% {
+            transform: translateX(-80vw);
+        }
+
+        100% {
+            transform: translateX(0);            
+        }
+    }
 }
