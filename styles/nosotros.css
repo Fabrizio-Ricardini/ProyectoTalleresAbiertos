@@ -43,6 +43,8 @@ body, html{
 .first{
   background-color: var(--c_celeste);
   padding-top: 5px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .second{
@@ -130,6 +132,11 @@ body, html{
   align-items: center;
   text-decoration: none !important;
 }
+/* modificaciones de css navbar y first */
+.navbar{
+  display: block !important;
+}
+
 
 /* ----------mediaqueries------- */
 /* medium */
