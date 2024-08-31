@@ -1,36 +1,44 @@
 @import url(./styles.css);
-
+main {
+    padding: 80px 0;
+}
 .contact-background{
     background-color: var(--c_mostaza);
     overflow: hidden;
-    height: 90vh;
+    height: 90%;
 }
-.contact-container{
+.contact-container {
     display: flex;
     flex-direction: column;
     background-color: var(--c_blanco);
     border-radius: 1rem;
-    padding: 4rem;
-    width: 50%;
-    margin: 4rem auto 4rem auto;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 4rem auto;
+    height: auto;
 }
-h1,
-p{
+main h1,
+main p{
     font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
     text-align: center;
 }
-h1{
-    font-size: min(50pt, calc(.8rem + 2vw));
+main h1 {
+    font-size: min(32px, 6vw); /* Adaptativo según el ancho de la pantalla */
+    margin-bottom: 1rem;
 }
-p{
-    font-size: var(--f_fontSize);
+
+main p {
+    font-size: min(18px, 4vw); /* Adaptativo según el ancho de la pantalla */
     margin-bottom: 2rem;
-    font-size: min(25pt, calc(.8rem + 1vw));
 }
-#img-ilustrativa{
-    width: 60%;
+
+#img-ilustrativa {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
     margin: auto;
 }
+
 .button-mail{
     display: flex;
     justify-content: center;
@@ -79,35 +87,28 @@ p{
     .contact-container {
         width: 90%;
         height: 75vh;
-        margin: 2rem auto 0 auto;
+        margin: 5rem auto 0 auto;
+        gap: 2rem;
     }
-    h1 {
+    main h1 {
         font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
         font-size: min(24pt, calc(.8rem + 4vw));
         text-transform: uppercase;
         font-weight: 900;
         margin-bottom: 1rem;
     }
-    p {
+    main p {
         margin-bottom: 2.5rem;
         font-size: min(15pt, calc(.8rem + 2vw));
     }
-    .button-mail,
-    .button-wpp {
+    .button-mail{
         font-weight: 900;
         text-transform: uppercase;
+        width: 90%;
         padding: .5rem;
         border: solid 1px var(--c_lila);
         border-radius: 0;
-    }
-    .button-mail {
         text-decoration: none;
-    }
-    .button-wpp {
-        background-color: var(--c_lila);
-    }
-    .button-wpp:hover {
-        background-color: #9a01c0;
     }
     .button-mail:hover {
         background-color: #3b3b3b;
