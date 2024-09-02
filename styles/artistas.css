@@ -13,6 +13,30 @@
         z-index: -2;
         }
 }
+.titulo-principal {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--c_blanco);
+    width: 30%;
+    text-shadow: black 1px 1px 1px;
+
+  }
+.presenter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 6vw;
+    height: 100vh;
+
+    background-image: url(../assets/coleccionPrivadaCentralPark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .presenter-image {
+    display: none;
+  }
 .title{
     font-weight: bolder;
     font-size: 35px;
@@ -164,6 +188,9 @@
     background-image: url(../assets/luxLinder.jpg);
 }
 @media (max-width: 768px) {
+    .presenter{
+        height: 60vh;
+    }
     .name{
         text-shadow: 1px 1px 2px black;
         text-align: center;
