@@ -71,7 +71,7 @@ a.active,a:hover{
         width: 105%;
         height: auto;
         background: rgba(125, 229, 236, 0.5);
-        margin-top: 90px;
+        margin-top: 70px;
         left: -120%;
         text-align: center;
         transition: all .5s;
