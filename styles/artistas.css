@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.Hero{
+    height: 70%;
+
+    img{
+        position: relative;
+        top: -4.1%;
+        height: 104.1%;
+        width: 100%;
+        z-index: -2;
+        }
+}
+.titulo-principal {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--c_blanco);
+    width: 30%;
+    text-shadow: black 1px 1px 1px;
+
+  }
+.presenter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 6vw;
+    height: 100vh;
+
+    background-image: url(../assets/coleccionPrivadaCentralPark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .presenter-image {
+    display: none;
+  }
+.title{
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.subtitle{
+    position: relative;
+    color: #F0F0F0;
+    top: -60%;
+    left: 10%;
+    width: 30%;
+    font-size: 96px;
+    text-shadow: 1px 1px 2px black;
+}
+.info{
+    width: 100%;
+    padding: 2rem;
+    margin:auto;
+}
+.appear{
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
+    margin-bottom: 10px;
+    gap: 7px;
+  }
+
+  .item {
+    /* Mantén todos los items con la misma altura */
+    height: 200px; /* Puedes ajustar la altura según sea necesario */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* .nav-links{
+    border: 1px solid #cecece;
+    border-radius: 60px;
+    padding: 0px 8px;
+}
+.nav-links li a{
+    font-size: 9px;
+    color: #5f5e5e;
+} */
+.item img {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+}
+.name{
+    font-weight: bold;
+    font-size: 11px;
+    color: #e5e5e5;
+    position: relative;
+    bottom: -45%;
+    left: -35px;
+    text-align: left;
+}
+.art{
+    height: 60vh;
+}
+.artist1{
+
+    background-image: url(../assets/augustoZanela.jpg);
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artist2{
+    background-image: url(../assets/Andrea\ Allen.png);
+    min-height: 300px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artist3{
+    background-image: url(../assets/EugenioCuttica.png);
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artist4{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/Cecilia-Ivanchevich.jpg);
+}
+.artist5{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/DanielCorvino.png);
+}
+.artist6{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/ceciliaDuhau.jpg);
+}
+.artist7{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/hoffmann.jpg);
+}
+.artist8{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/FernandoBrizuela.png);
+}
+.artist9{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/horacionSanchezFantino.jpg);
+}
+.artist10{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/monicaTiezzi.jpg);
+}
+.artist11{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/martina-servio.jpg);
+}
+.artist12{
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/luxLinder.jpg);
+}
+@media (max-width: 768px) {
+    .presenter{
+        height: 60vh;
+    }
+    .name{
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .subtitle{
+        display: none;
+        font-size: 3rem;
+    }
+    /* footer p{
+            font-size: 9px;
+        } */
+    .item{
+        max-height: 300px;
+    }
+    /* .footer-column{
+        max-width: min(10%, 30px);
+    }
+    .footer-column h3{
+        font-size: 11px;
+    } */
+    .container:nth-of-type(odd) .item:nth-child(1) {
+        grid-column: span 1; /* Items en posición impar ocupan 2 columnas */
+      }
+
+      .container:nth-of-type(odd) .item:nth-child(2) {
+        grid-column: span 1; /* Items en posición par ocupan 1 columna */
+      }
+
+      .container:nth-of-type(even) .item:nth-child(1) {
+        grid-column: span 1; /* Items en posición impar ocupan 1 columna en las filas pares */
+      }
+
+      .container:nth-of-type(even) .item:nth-child(2) {
+        grid-column: span 1; /* Items en posición par ocupan 2 columnas en las filas pares */
+      }
+      body{
+        background-color: white;
+    }
+    .artist1,
+.artist2,
+.artist3,
+.artist4,
+.artist5,
+.artist6,
+.artist7,
+.artist8,
+.artist9,
+.artist10,
+.artist11,
+.artist12 {
+    max-height: 300px;
+}
+}
+@media (min-width: 769px){
+
+    .close, .appear{
+        display: block;
+    }
+    .close-d{
+        display: none;
+    }
+    body{
+        background-color: #04D9B2;
+    }
+    .item {
+        border-radius: 15px;
+    }
+    .container{
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    .container:nth-of-type(odd) .item:nth-child(1) {
+        grid-column: span 2; /* Items en posición impar ocupan 2 columnas */
+      }
+
+      .container:nth-of-type(odd) .item:nth-child(2) {
+        grid-column: span 1; /* Items en posición par ocupan 1 columna */
+      }
+
+      .container:nth-of-type(even) .item:nth-child(1) {
+        grid-column: span 1; /* Items en posición impar ocupan 1 columna en las filas pares */
+      }
+
+      .container:nth-of-type(even) .item:nth-child(2) {
+        grid-column: span 2; /* Items en posición par ocupan 2 columnas en las filas pares */
+      }
+    }
