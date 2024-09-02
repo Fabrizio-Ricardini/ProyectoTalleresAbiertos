@@ -1,0 +1,116 @@
+@import url(./styles.css);
+main {
+    padding: 80px 0;
+}
+.contact-background{
+    background-color: var(--c_mostaza);
+    overflow: hidden;
+    height: 90%;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c_blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 4rem auto;
+    height: auto;
+}
+main h1,
+main p{
+    font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+    text-align: center;
+}
+main h1 {
+    font-size: min(32px, 6vw); /* Adaptativo según el ancho de la pantalla */
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: min(18px, 4vw); /* Adaptativo según el ancho de la pantalla */
+    margin-bottom: 2rem;
+}
+
+#img-ilustrativa {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    margin: auto;
+}
+
+.button-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--f_fontSize);
+    font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border-radius: .75rem;
+
+    width: 75%;
+    margin: auto;
+}
+.button-mail img{
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+.button-mail{
+    background-color: black;
+    color: #ffffff;
+}
+.button-mail:hover{
+    background-color: #3b3b3b;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #img-ilustrativa{
+        width: 100%;
+        margin: auto;
+    }
+    .contact-background {
+        background: 
+            linear-gradient(to bottom, var(--c_lila) 0%, var(--c_lila) 20%),
+            linear-gradient(to bottom, var(--c_celeste) 20%, var(--c_celeste) 40%),
+            linear-gradient(to bottom, var(--c_aquamarino) 40%, var(--c_aquamarino) 60%),
+            linear-gradient(to bottom, var(--c_amarillo) 60%, var(--c_amarillo) 80%),
+            linear-gradient(to bottom, var(--c_mostaza) 80%, var(--c_mostaza) 100%);
+        background-size: 100% 20%;
+        background-repeat: no-repeat;
+        background-position: 0 0, 0 25%, 25% 50%, 50% 75%, 75% 100%;
+        height: 100vh;
+    }
+    .contact-container {
+        width: 90%;
+        height: 75vh;
+        margin: 5rem auto 0 auto;
+        gap: 2rem;
+    }
+    main h1 {
+        font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
+        font-size: min(24pt, calc(.8rem + 4vw));
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    main p {
+        margin-bottom: 2.5rem;
+        font-size: min(15pt, calc(.8rem + 2vw));
+    }
+    .button-mail{
+        font-weight: 900;
+        text-transform: uppercase;
+        width: 90%;
+        padding: .5rem;
+        border: solid 1px var(--c_lila);
+        border-radius: 0;
+        text-decoration: none;
+    }
+    .button-mail:hover {
+        background-color: #3b3b3b;
+    }
+}
