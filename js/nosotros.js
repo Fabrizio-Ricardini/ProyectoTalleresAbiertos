@@ -135,11 +135,11 @@ us.map((obj) => {
     card.innerHTML += `
             
                 <div class="card mb-3 border border-0 col-md-12 container-card">
-                    <div class="row g-0 container-card-2">
+                    <div class="row g-0 container-card-1">
                         <div class="col-md-4 div-info-1">
                             <img src="${obj.photo}" class="img-fluid rounded-start rounded cards-imgs">
                         </div>
-                        <div class="col-md-8 div-info-2">
+                        <div class="col-md-8 div-info-2 d-flex ">
                             <div class="card-body border-start container-card-info container-card-info-a ${obj.color} align-middle">
                                 <h4 class="card-title">${obj.name} <b>${obj.surname}</b></h4>
                                 <p class="card-text">${obj.role}</p>
@@ -155,7 +155,7 @@ us.map((obj) => {
           
            <div class="card mb-3 border border-0 col-md-12 ms-auto container-card">
                 <div class="row g-0 container-card-2">
-                    <div class="col-md-8  div-info-2">
+                    <div class="col-md-8  div-info-2 d-flex">
                         <div class="card-body border-end container-card-info container-card-info-b ${obj.color} align-middle d-flex align-items-end flex-column mb-3 ">
                             <h4 class="card-title name-title">${obj.name} <b>${obj.surname}</b></h4>
                             <p class="card-text">${obj.role}</p>
