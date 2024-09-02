@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
   }
-.nav-links{
+/* .nav-links{
     border: 1px solid #cecece;
     border-radius: 60px;
     padding: 0px 8px;
@@ -59,7 +59,7 @@
 .nav-links li a{
     font-size: 9px;
     color: #5f5e5e;
-}
+} */
 .item img {
     display: inline-block;
     width: 100%;
