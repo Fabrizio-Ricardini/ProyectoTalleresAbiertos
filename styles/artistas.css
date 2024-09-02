@@ -164,7 +164,7 @@
 }
 @media (max-width: 768px) {
     .subtitle{
-        display: block;
+        display: none;
         font-size: 3rem;
     }
     footer p{
@@ -178,9 +178,6 @@
     }
     .footer-column h3{
         font-size: 11px;
-    }
-    .close, .appear{
-        display: none;
     }
     .container:nth-of-type(odd) .item:nth-child(1) {
         grid-column: span 1; /* Items en posición impar ocupan 2 columnas */
