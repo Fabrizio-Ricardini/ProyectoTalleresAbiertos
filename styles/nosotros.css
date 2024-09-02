@@ -79,6 +79,8 @@ body, html{
 }
 .container-card-info{
   border-width: 10px !important; 
+  margin: auto;
+
 }
 
 .container-card-info-b{
@@ -137,6 +139,10 @@ body, html{
   display: block !important;
 }
 
+.div-info-2{
+  align-items: center;
+  justify-content: center;
+ }
 
 /* ----------mediaqueries------- */
 /* medium */
@@ -172,9 +178,12 @@ body, html{
     font-size: 3em !important;
     font-weight: bold;
   }
-
+  .container-card{
+    padding: 2px;
+  }
   .container-card-info{
     border-width: 4px !important; 
+    margin: auto;
   }
 
   .container-card-info-a{
@@ -191,6 +200,11 @@ body, html{
   .container-card-info h4{
     font-size: 1.5em !important;
   }
+
+  .container-card-2{
+    justify-content: end;
+  }
+
 
   .text-with-icon i {
     font-size: 1.3em;
@@ -224,6 +238,7 @@ body, html{
    .card-html-container{
     width: 99% !important ;
     margin-left: 1.3%;
+    padding: 0;
    }
 
   .img-logo{
@@ -258,7 +273,10 @@ body, html{
   
   .container-card-info{
     border-width: 4px !important; 
+    margin: auto;
   }
+
+
   .container-card-info .cards-imgs{
     width: 230px !important;
   }
@@ -277,8 +295,13 @@ body, html{
     font-size: 1.2em;
   }
 
+
+  .container-card-2{
+    justify-content: end;
+  }
+
   .div-info-1{
-   width: 80px;
+   width: 150px;
    margin-top: 15px !important;
    margin-left: 1px;
 
@@ -292,7 +315,10 @@ body, html{
 
 }
 /*extra small */
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 486px) {
+  .card-html-container{
+    padding: 0 !important;
+  }
   .second{
     margin-top: 6em !important;
     padding: 0 0 !important;
@@ -313,27 +339,21 @@ body, html{
    }
 
   .container-card{
-    width: 380px !important;
+    width: 98% !important;
   }
+
   .container-card-info h4{
     font-size: 1em !important;
   }
   .container-card-info{
     border-width: 4px !important; 
-    width: 110px;
-  }
-
-  .cards-imgs{
-    width: 50px !important;
+    width: 90%;
   }
 
   .div-info-1{
-   width: 50px;
+   width: 100px;
   }
-  .div-info-2{
-   width: 120px;   
-  }
-  
+
 }
 
 
