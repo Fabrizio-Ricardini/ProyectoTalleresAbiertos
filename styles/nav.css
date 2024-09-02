@@ -6,19 +6,15 @@
     position:absolute;
     height: 80px;
 }
-
-.navbar {
-    position: fixed;
+nav{
     z-index: 1;
+}
+.navbar {
     padding: 10px;
     height: 80px;
     width: 100%;
     box-shadow: 2px 2px 5px #bbb;
     background-color: #FBFBFB;
-}
-
-main{
-    z-index: -2;
 }
 nav ul{
     float: right;
@@ -35,15 +31,10 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1E1E1E;
 }
 a.active,a:hover{
     background: #D59BD8;
     transition: .5s;
-}
-
-.nav-logo.active, .nav-logo:hover{
-    background: none;
 }
 
 @media (max-width: 768px) {
@@ -67,16 +58,18 @@ a.active,a:hover{
         display: block;
     }
     .nav-links{
+        padding: 0;
         position: fixed;
-        width: 105%;
+        width: 100%;
         height: auto;
-        background: rgba(125, 229, 236, 0.9);
+        background: rgba(125, 229, 236, 0.5);
         margin-top: 70px;
-        left: -120%;
+        bottom: 100%;
         text-align: center;
         transition: all .5s;
+        z-index: -1;
+        left: .1%;
     }
-
     nav ul li{
         display: block;
         margin: 50px 0;
@@ -92,6 +85,6 @@ a.active,a:hover{
         color: #D59BD8;
     }
     #check:checked ~ ul{
-        left: 0;
+        bottom: 41.5%;
     }
 }
