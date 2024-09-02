@@ -445,6 +445,9 @@
 }
 
 @media (max-width: 991px) {
+  .video{
+    margin-top: 5rem;
+  }
   .artistas {
     display: none;
   }
