@@ -172,18 +172,18 @@
         display: none;
         font-size: 3rem;
     }
-    footer p{
+    /* footer p{
             font-size: 9px;
-        }
+        } */
     .item{
         max-height: 300px;
     }
-    .footer-column{
+    /* .footer-column{
         max-width: min(10%, 30px);
     }
     .footer-column h3{
         font-size: 11px;
-    }
+    } */
     .container:nth-of-type(odd) .item:nth-child(1) {
         grid-column: span 1; /* Items en posición impar ocupan 2 columnas */
       }
