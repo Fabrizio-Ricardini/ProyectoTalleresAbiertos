@@ -1,0 +1,297 @@
+/* Reseteo de Estilos General */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Declaracion de colores  y Font*/
+:root {
+  /*-- Font --*/
+  --f_fontSize: 16px;
+  --f_fontWeight: 400;
+  --f_fontFamily: "Raleway", sans-serif;
+  --f_fontFamily--Secundary: "Roboto", sans-serif;
+  --f_lineHeight: 1.5;
+  /*-- Colour --*/
+  --c_blanco: #fff;
+  --c_negro: #000;
+  --c_lila: #D19AD9;
+  --c_celeste: #04B2D9;
+  --c_aquamarino: #04D9B2;
+  --c_amarillo: #F2E750;
+  --c_mostaza: #F2AA52;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-container h1 {
+  color: white;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--f_fontFamily);
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+  z-index: -1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.conocenos-container {
+  margin: 1rem 0 1rem 0;
+  font-family: var(--f_fontFamily);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  place-items: center;
+
+}
+
+.title-container {
+  width: 80%;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title-container p {
+  font-size: 0.75rem;
+}
+
+.conocenos-container .map-container iframe {
+  width: 44vw;
+  height: 26vw;
+  border-radius: .5rem;
+  padding-right: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .banner-container h1 {
+    font-size: 6rem;
+    margin-left: 6rem;
+  }
+
+  .conocenos-container {
+    height: 100vh;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .title-container h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .title-container p {
+    font-size: 2rem;
+  }
+}
+
+/* Galeria Central Park */
+
+.mobile-text {
+  display: none;
+}
+
+#galeria-central {
+  background-color: #F2AA52;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#galeria-central .container-galeria img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+#galeria-central .container-galeria .galeria1 {
+  width: calc(547 / 2);
+  height: 310px;
+}
+
+#galeria-central .container-galeria .galeria2 {
+  width: calc(1172 / 2);
+  height: 310px;
+}
+
+#galeria-central .container-galeria .galeria3 {
+  width: calc(1143 / 2);
+  height: 288px;
+}
+
+#galeria-central .container-galeria .galeria4 {
+  width: calc(586 / 2);
+  height: 288px;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  gap: .3rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+
+  .conocenos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  #map {
+    border: 0;
+    width: 100vw;
+    padding: 0 1rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #galeria-central {
+    background-color: white;
+    padding: 20px;
+  }
+
+  .container-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .mobile-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-text h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--f_fontFamily);
+    font-size: 35px;
+  }
+
+  .mobile-text p {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: var(--f_fontFamily--Secundary);
+    line-height: var(--f_lineHeight);
+  }
+
+  #galeria-central .container-galeria img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  #galeria-central .container-galeria .galeria1 {
+    width: calc(145px);
+    height: 130px;
+  }
+
+  #galeria-central .container-galeria .galeria2 {
+    width: calc(211px);
+    height: 130px;
+  }
+
+  #galeria-central .container-galeria .galeria3 {
+    width: calc(211px);
+    height: 130px;
+  }
+
+  #galeria-central .container-galeria .galeria4 {
+    width: calc(145px);
+    height: 130px;
+  }
+
+
+  #galeria-central {
+    order: -1;
+    /* Mueve la galería antes que la sección de conocenos */
+  }
+
+  .conocenos-container {
+    order: 0;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #galeria-central {
+    padding: 80px;
+  }
+
+
+}
