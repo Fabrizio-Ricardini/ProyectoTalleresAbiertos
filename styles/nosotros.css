@@ -80,6 +80,7 @@ body, html{
 .container-card-info{
   border-width: 10px !important; 
   margin: auto;
+  padding: 0 16px !important;
 
 }
 
@@ -212,7 +213,9 @@ body, html{
 
   .div-info-1{
    width: 150px;
+   
   }
+  
   .div-info-2{
    width: 300px;
   }
@@ -302,10 +305,9 @@ body, html{
 
   .div-info-1{
    width: 150px;
-   margin-top: 15px !important;
    margin-left: 1px;
-
   }
+
   .div-info-2{
    width: 200px;   
   }
