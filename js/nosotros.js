@@ -5,7 +5,7 @@ const us = [
     surname: "Ricardini",
     role: "Proyect Manager / Desarrollo",
     linkedin: "https://www.linkedin.com/in/fabrizio-ricardini/ ",
-    photo: "../src/nosotros/Fabrizio-Ricardini.jpg",
+    photo: "../src/nosotros/Fabrizio-Ricardini.png",
     color: "container-card-c1",
   },
   {
