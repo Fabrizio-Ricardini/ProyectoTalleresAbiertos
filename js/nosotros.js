@@ -104,7 +104,7 @@ const us = [
     surname: "Erceg",
     role: "Desarrollo",
     linkedin: "www.linkedin.com/in/gonzalo-erceg/",
-    photo: "../src/nosotros/GonzaloErceg.webp",
+    photo: "../src/nosotros/Gonzalo_Erceg.jpg",
     color: "container-card-c2",
   },
   {
